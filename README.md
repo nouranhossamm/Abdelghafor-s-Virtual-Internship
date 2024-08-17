@@ -47,4 +47,83 @@ End the game to view the final status of your pet. If the pet's hunger or happin
 * Ensure that you have adopted a pet before attempting to feed, play with, or check its status.
 * Regularly feed and play with your pet to maintain its well-being and prevent the game from ending prematurely.
 
+### Flowchart
+------------
 
+                                  +---------------+
+                                  |  Start Game   |
+                                  +---------------+   
+                                          |
+                                          |
+                                          v
+                                 +-------------------+
+                                 |  Adopt a Pet      |
+                                 |  (Enter Pet Name) |
+                                 +-------------------+
+                                          |
+                                          |
+                                          v
+                            +----------------------------+
+                            |  Initialize Pet            |
+                            |  (Hunger=50, Happiness=50) |
+                            +----------------------------+
+                                          |
+                                          |
+                                          v
+                                 +-------------------+
+                                 |  Main Menu        |
+                                 |  1. Feed Pet      |
+                                 |  2. Play with Pet |
+                                 |  3. Check Status  |
+                                 |  4. End Game      |
+                                 +-------------------+
+                                          |
+                                          |
+                                          v
+                                +--------------------+
+                                |  Feed Pet          |
+                                |  (Increase Hunger) |
+                                +--------------------+
+                                          |
+                                          |
+                                          v
+                          +---------------------------------+
+                          |  Check Hunger                   |
+                          |  (If Hunger >= 90, Pet is Full) |
+                          +---------------------------------+
+                                         |
+                                         |
+                                         v
+                              +-----------------------+
+                              |  Play with Pet        |
+                              |  (Increase Happiness) |
+                              +-----------------------+
+                                         |
+                                         |
+                                         v
+                      +-----------------------------------------+
+                      |  Check Happiness                        |
+                      |  (If Happiness >= 90, Pet is Too Happy) |
+                      +-----------------------------------------+
+                                         |
+                                         |
+                                         v
+                          +---------------------------------+
+                          |  Check Status                   |
+                          |  (Display Hunger and Happiness) |
+                          +---------------------------------+
+                                         |
+                                         |
+                                         v
+                  +----------------------------------------------+
+                  |  End Game                                    |
+                  |  (Check if Hunger or Happiness <= 0)         |
+                  |  If so, Game Over, else Display Final Status |
+                  +----------------------------------------------+
+                                         |
+                                         |
+                                         v
+                          +------------------------------+
+                          |  Game Over                   |
+                          |  (Display Game Over Message) |
+                          +------------------------------+
