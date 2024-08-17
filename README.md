@@ -1,4 +1,4 @@
-# Abdelghafor-s-Virtual-Internship
+# Abdelghafor's Virtual Internship
 
 ## Task 1: Pet Adoption Game
 
