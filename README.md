@@ -2,8 +2,6 @@
 
 ## Task 1: Pet Adoption Game
 
-=====================
-
 ### Introduction
 ---------------
 
