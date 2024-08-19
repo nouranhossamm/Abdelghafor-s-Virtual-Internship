@@ -82,7 +82,7 @@ public class PetAdoptionGame {
             if (happinessLevel < 90) {
                 happinessLevel += 10;
                 hungerLevel -= 20;
-                if (hungerLevel <= 0) {
+                if (hungerLevel < 0) {
                     hungerLevel = 0;
                 }
             if (happinessLevel <= 0 || happinessLevel > 100 || hungerLevel <= 0 || hungerLevel > 100) {
