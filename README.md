@@ -47,83 +47,64 @@ End the game to view the final status of your pet. If the pet's hunger or happin
 * Ensure that you have adopted a pet before attempting to feed, play with, or check its status.
 * Regularly feed and play with your pet to maintain its well-being and prevent the game from ending prematurely.
 
-### Flowchart
+---------------
+
+# Personal Finance Tracker
+===========================
+
+## Introduction
+---------------
+
+The Personal Finance Tracker is a command-line application designed to help users manage their financial transactions. It allows users to record transactions, view and sort transactions, view a financial summary, and gain insights into their spending habits.
+
+## Features
 ------------
-        
-                                          +---------------+
-                                          |  Start Game   |
-                                          +---------------+   
-                                                  |
-                                                  |
-                                                  v
-                                         +-------------------+
-                                         |  Adopt a Pet      |
-                                         |  (Enter Pet Name) |
-                                         +-------------------+
-                                                  |
-                                                  |
-                                                  v
-                                    +----------------------------+
-                                    |  Initialize Pet            |
-                                    |  (Hunger=50, Happiness=50) |
-                                    +----------------------------+
-                                                  |
-                                                  |
-                                                  v
-                                         +-------------------+
-                                         |  Main Menu        |
-                                         |  1. Feed Pet      |
-                                         |  2. Play with Pet |
-                                         |  3. Check Status  |
-                                         |  4. End Game      |
-                                         +-------------------+
-                                                  |
-                                                  |
-                                                  v
-                                        +--------------------+
-                                        |  Feed Pet          |
-                                        |  (Increase Hunger) |
-                                        +--------------------+
-                                                  |
-                                                  |
-                                                  v
-                                  +---------------------------------+
-                                  |  Check Hunger                   |
-                                  |  (If Hunger >= 90, Pet is Full) |
-                                  +---------------------------------+
-                                                 |
-                                                 |
-                                                 v
-                                      +-----------------------+
-                                      |  Play with Pet        |
-                                      |  (Increase Happiness) |
-                                      +-----------------------+
-                                                 |
-                                                 |
-                                                 v
-                              +-----------------------------------------+
-                              |  Check Happiness                        |
-                              |  (If Happiness >= 90, Pet is Too Happy) |
-                              +-----------------------------------------+
-                                                 |
-                                                 |
-                                                 v
-                                  +---------------------------------+
-                                  |  Check Status                   |
-                                  |  (Display Hunger and Happiness) |
-                                  +---------------------------------+
-                                                 |
-                                                 |
-                                                 v
-                          +----------------------------------------------+
-                          |  End Game                                    |
-                          |  (Check if Hunger or Happiness <= 0)         |
-                          |  If so, Game Over, else Display Final Status |
-                          +----------------------------------------------+
-                                                 |
-                                                 |
-                                                 v
-                                  +------------------------------+
-                                  |  Game Over                   |
-                                  |  (Display Game Over Message) |
-                                  +------------------------------+
+
+* Record financial transactions with descriptions, amounts, and categories
+* View all transactions with optional sorting by amount
+* View a financial summary including total income, total expenses, and balance
+* Gain insights into spending habits by category
+
+## How to Use
+--------------
+
+1. Run the application and choose an option from the menu:
+    * Input Transaction: Record a new financial transaction
+    * View Transactions: View all transactions with optional sorting
+    * View Summary: View a financial summary
+    * Get Insights: Gain insights into spending habits by category
+    * Exit: Close the application
+2. Follow the prompts to enter transaction details, view transactions, or view the financial summary
+3. Use the insights feature to understand your spending habits by category
+
+## Troubleshooting
+-----------------
+
+* Ensure all inputs are correctly formatted (e.g., amounts should be numerical values, descriptions and categories should be properly spelled)
+* If sorting does not work as expected, check that the sorting logic is correctly implemented and applied
+
+## Sample Output
+-----------------
+
+The application will display a menu with options to input transactions, view transactions, view a financial summary, get insights, or exit. Sample output for each feature is shown below:
+
+### Input Transaction
+
+* Enter description: [user input]
+* Enter amount: [user input]
+* Enter category: [user input]
+
+### View Transactions
+
+* [table displaying all transactions with columns for description, amount, and category]
+
+### View Summary
+
+* Total Income: [total income]
+* Total Expenses: [total expenses]
+* Balance: [balance]
+
+### Get Insights
+
+* [table displaying category analysis with columns for category, total expenses, and percentage of total expenses]
+
