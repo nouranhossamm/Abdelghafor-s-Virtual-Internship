@@ -8,7 +8,7 @@ public class MultiplicationLearningGameDemo {
 	
 	static Scanner scan = new Scanner(System.in);
 	static int highScore = 0;
-    static final int maxQuestion = 10;
+    static final int maxQuestion = 20;
     static final int maxDifficulty = 4;
     static int correctScore = 0;
     static int wrongScore = 0;
