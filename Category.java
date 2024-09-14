@@ -1,5 +1,3 @@
-package PersonalFinanceTracker;
-
 public class Category {
     private String name;
 

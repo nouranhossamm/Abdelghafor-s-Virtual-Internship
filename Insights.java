@@ -1,5 +1,3 @@
-package PersonalFinanceTracker;
-
 import java.util.Map;
 
 public class Insights {

@@ -1,5 +1,3 @@
-package PersonalFinanceTracker;
-
 public class Transaction {
     private String description;
     private double amount;
