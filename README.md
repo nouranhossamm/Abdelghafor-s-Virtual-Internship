@@ -1,117 +1,70 @@
 # Abdelghafor's Virtual Internship
 
-## Task 1: Pet Adoption Game
-
+## Task 4: Library Management System
 ### Introduction
 ---------------
 
-Welcome to the Pet Adoption Game, a console-based application that simulates the experience of adopting and taking care of a pet. In this game, you can adopt a pet, feed it, play with it, and check its status. The game tracks the pet's hunger and happiness levels, and it ends if these levels drop to critical values.
+Welcome to the Library Management System, a software system designed to automate the tasks involved in managing a library's book inventory and its members.
 
-### How to Play
---------------
-
-#### Adopt a Pet
-
-To start the game, adopt a pet by entering its name. This will set the initial hunger and happiness levels to 50.
-
-#### Feed Your Pet
-
-Feed your pet to increase its hunger level. If the hunger level is already at 90, the pet is considered full, and no further increase is allowed.
-
-#### Play with Your Pet
-
-Play with your pet to increase its happiness level. If the happiness level is already at 90, the pet is considered too happy, and no further increase is allowed.
-
-#### Check Your Pet's Status
-
-Check your pet's current hunger and happiness levels at any time.
-
-#### End the Game
-
-End the game to view the final status of your pet. If the pet's hunger or happiness levels are 0 or below, the game will end with a message indicating that the pet did not survive.
-
-### System Requirements
+### Purpose and Concept
 -----------------------
 
-* Java 8 or later
+The goal is to create a software system that makes it easy for librarians to track and manage books and for members to borrow and return them efficiently. This project serves as an introduction to fundamental OOP principles, such as encapsulation, inheritance, and abstraction.
 
-### How to Run
--------------
-
-1. Compile the `PetAdoptionGame.java` file using `javac`.
-2. Run the `PetAdoptionGame` class using `java`.
-
-### Troubleshooting
--------------------
-
-* Ensure that you have adopted a pet before attempting to feed, play with, or check its status.
-* Regularly feed and play with your pet to maintain its well-being and prevent the game from ending prematurely.
-
----------------
-
-## Task 2: Personal Finance Tracker
-
-### Introduction
----------------
-
-Welcome to the Personal Finance Tracker, a command-line application designed to help users manage their financial transactions. It allows users to record transactions, view and sort transactions, view a financial summary, and gain insights into their spending habits.
-
-### How to Use
---------------
-
-#### Record a Transaction
-
-Record a financial transaction with a description, amount, and category.
-
-#### View Transactions
-
-View all transactions with optional sorting by amount.
-
-#### View Financial Summary
-
-View a financial summary including total income, total expenses, and balance.
-
-#### Get Insights
-
-Gain insights into spending habits by category.
-
-#### Exit
-
-Close the application.
-
-### System Requirements
------------------------
-
-* Java 8 or later
-
-### Troubleshooting
--------------------
-
-* Ensure all inputs are correctly formatted (e.g., amounts should be numerical values, descriptions and categories should be properly spelled).
-* If sorting does not work as expected, check that the sorting logic is correctly implemented and applied.
-
-### Sample Output
+### Main Features
 -----------------
 
-The application will display a menu with options to input transactions, view transactions, view a financial summary, get insights, or exit. Sample output for each feature is shown below:
+* Book Management
+    + Add Books: Create new entries for books, including details like title, author, ISBN, and publication date.
+    + Update Books: Modify existing book details, such as correcting errors or updating availability status.
+    + Delete Books: Remove books from the catalog when they are no longer available or needed.
+* Member Management
+    + Register Members: Add new library members with personal details such as name, membership ID, and contact information.
+    + Update Member Information: Edit member profiles, including contact details and membership status.
+    + Track Borrowing History: Maintain a record of all books borrowed by each member, including due dates and overdue fines.
+* Borrowing and Returning Books
+    + Borrow Books: Allow members to borrow books, updating their status to ‘checked out’ and recording the borrowing date.
+    + Return Books: Process the return of books, updating their status to ‘available’ and calculating any overdue fines if applicable.
 
-#### Input Transaction
+### UML Diagram
+---------------
 
-* Enter description: [user input]
-* Enter amount: [user input]
-* Enter category: [user input]
+**Library Management System UML Class Diagram**
+=====================================================
 
-#### View Transactions
-
-* [table displaying all transactions with columns for description, amount, and category]
-
-#### View Financial Summary
-
-* Total Income: [total income]
-* Total Expenses: [total expenses]
-* Balance: [balance]
-
-#### Get Insights
-
-* [table displaying category analysis with columns for category, total expenses, and percentage of total expenses]
-
+    +--------------------+
+    |    Library         |
+    +--------------------+
+    | - bookList         |
+    | - memberList       |
+    | + addBook()        |
+    | + removeBook()     |
+    | + registerMember() |
+    | + borrowBook()     |
+    | + returnBook()     |
+    +--------------------+
+       |             |
+       | 1..*        | 1..*
+       |             |
+       v             v
++---------------+   +----------------+
+|      Book     |   |     Member     |
++---------------+   +----------------+
+| - title       |   | - name         |
+| - author      |   | - membershipID |
+| - ISBN        |   | - contactInfo  |
+| - publication |   | - borrowedBooks|
+| - status      |   |                |
++---------------+   +----------------+
+                         |
+                         | 0..*
+                         |
+                         v
+                    +---------------+
+                    |  BorrowedBook |
+                    +---------------+
+                    | - book        |
+                    | - borrowDate  |
+                    | - dueDate     |
+                    | - fine        |
+                    +---------------+
