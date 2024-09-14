@@ -46,7 +46,7 @@ The goal is to create a software system that makes it easy for librarians to tra
     | + returnBook()     |
     +--------------------+
        |             |
-       | 1..*        | 1..*
+       |             | 
        |             |
        v             v
 +---------------+   +----------------+
@@ -59,7 +59,7 @@ The goal is to create a software system that makes it easy for librarians to tra
 | - status      |   |                |
 +---------------+   +----------------+
                          |
-                         | 0..*
+                         | 
                          |
                          v
                     +---------------+
