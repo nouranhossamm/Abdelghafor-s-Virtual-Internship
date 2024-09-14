@@ -29,6 +29,8 @@ The goal is to create a software system that makes it easy for librarians to tra
 ### UML Diagram
 ---------------
 
+```markdown
+
 **Library Management System UML Class Diagram**
 =====================================================
 
