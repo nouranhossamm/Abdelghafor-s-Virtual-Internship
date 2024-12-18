@@ -13,4 +13,5 @@
 
 # Documentation
 
- [here](https://github.com/nouranhossamm/Abdelghafor-s-Virtual-Internship/blob/main/Java%20Projects.pdf).
+ [First 3 Projects](https://github.com/nouranhossamm/Abdelghafor-s-Virtual-Internship/blob/main/Java%20Projects.pdf).
+ [Second 3 Projects](https://github.com/nouranhossamm/Abdelghafor-s-Virtual-Internship/blob/main/Java%20-OOP%20Projects.pdf).
